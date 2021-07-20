@@ -10,7 +10,7 @@ console.log("allcategories are", allCategories)
 
 function App() {
   const [menuItem, SetMenuItem] = useState(items);
-  const [buttons, setButtons] = useState([]);
+  const [buttons, setButtons] = useState([allCategories]);
 
   const filetrItemsCategory = (button) => {
     const filteredCategories = items.filter((item) => item.category === button);
