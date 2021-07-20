@@ -36,10 +36,27 @@ h2 {
 
 h2:hover {
   cursor: pointer;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   color: #037fff;
 }
 
 p {
   color: rgbs(255, 255, 255, 0.747);
+}
+
+.menu-menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+}
+
+.menu-item-container {
+  width: 100%;
+  padding: 1.5rem 1.4rem;
+  background-color: #19202e;
+}
+
+.menu-item > img {
+  width: 100%;
+
 }
