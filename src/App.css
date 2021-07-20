@@ -55,6 +55,9 @@ p {
   width: 100%;
   padding: 1.2rem 1.2rem;
   background-color: #19202e;
+}
+
+.menu-item {
   overflow: hidden;
 }
 
