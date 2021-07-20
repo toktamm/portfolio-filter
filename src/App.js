@@ -17,7 +17,7 @@ function App() {
         </h1>
       </div>
       <Button />
-      <Menu />
+      <Menu menuItem={menuItem} />
     </div>
   );
 }
