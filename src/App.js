@@ -13,7 +13,7 @@ function App() {
       <div className="title">
         <h1>
           Portfolio
-          <span>Filter</span>
+          <span> Filter</span>
         </h1>
       </div>
       <Button />

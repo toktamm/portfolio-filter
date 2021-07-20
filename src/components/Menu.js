@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Menu({ menuItem }) {
   return (
-    <div>
+    <div className="menu">
       {menuItem.map((item) => {
         return (
           <div className="item-container" key={item.id}>
