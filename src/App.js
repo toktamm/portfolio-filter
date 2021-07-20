@@ -8,6 +8,11 @@ function App() {
   const [menuItem, SetMenuItem] = useState(items);
   const [buttons, setButtons] = useState([]);
 
+  const filetrItemsCategory = (button) => {
+    const filteredCategories = items.filter((item) => item.category === button);
+    SetMenuItem(filteredCategories);
+  };
+
   return (
     <div className="App">
       <div className="title">
@@ -16,7 +21,7 @@ function App() {
           <span> Filter</span>
         </h1>
       </div>
-      <Button />
+      <Button filetrItemsCategory={filetrItemsCategory} />
       <Menu menuItem={menuItem} />
     </div>
   );
