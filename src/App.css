@@ -10,6 +10,7 @@ body {
   font-family: "Varela Round", sans-serif;
   color: white;
   background-color: #10121b;
+  font-size: 1.2rem;
 }
 
 .App {
@@ -49,6 +50,7 @@ p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem;
+  padding-bottom: 6rem;
 }
 
 .menu-item-container {
@@ -64,10 +66,34 @@ p {
 .menu-item > img {
   width: 100%;
   transition: all 0.3s ease-in-out;
-
 }
 
 .menu-item > img:hover {
   transform: scale(1.1);
+  cursor: pointer;
+}
+
+.button-buttons {
+  width: 70%;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.button-btn {
+  padding: 0.5rem 2rem;
+  background-color: #0c3564;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: white;
+  transition: all 0.4s ;
+}
+
+.button-btn:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.button-btn:hover {
+  background-color: #037fff;
   cursor: pointer;
 }
