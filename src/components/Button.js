@@ -1,9 +1,16 @@
 import React from "react";
 
-export default function Button({ filetrItemsCategory }) {
+export default function Button({ button, filetrItemsCategory }) {
   return (
     <div>
-      <button type="button" onClick={() => filetrItemsCategory('Tips')}>Tips</button>
+      {button.map((category, index) => {
+        return (
+          <button
+            type="button"
+            onClick={() => filetrItemsCategory(category)}
+          >{category}</button>
+        );
+      })}
     </div>
   );
 }
