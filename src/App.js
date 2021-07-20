@@ -4,7 +4,7 @@ import Menu from "./components/Menu";
 import Button from "./components/Button";
 import "./App.css";
 
-const allCategories = ["All", ...items.map((item) => item.category)];
+const allCategories = ["All", ...new Set(items.map(item => item.category))];
 console.log("allcategories are", allCategories);
 
 function App() {
@@ -12,7 +12,6 @@ function App() {
   const [buttons, setButtons] = useState(allCategories);
 
   const filetrItemsCategory = (button) => {
-    
     if (button === "All") {
       SetMenuItem(items);
       return;
