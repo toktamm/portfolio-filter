@@ -4,6 +4,10 @@ import Menu from "./components/Menu";
 import Button from "./components/Button";
 import "./App.css";
 
+const allCategories = ['All', ...items.map(item => item.category)];
+console.log("allcategories are", allCategories) 
+
+
 function App() {
   const [menuItem, SetMenuItem] = useState(items);
   const [buttons, setButtons] = useState([]);
